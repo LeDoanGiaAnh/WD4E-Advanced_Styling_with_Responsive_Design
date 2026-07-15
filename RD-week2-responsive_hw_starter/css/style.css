@@ -43,23 +43,36 @@ div{
   padding: 2px;
 }
 
+/* ==========================================================================
+   Query #1: Tablet View (Tr kích hoạt ở độ rộng màn hình từ 772px trở lên)
+   ========================================================================== */
+@media screen and (min-width: 772px) {
+    /* 1.a & 1.b: Thay đổi layout của các thẻ div chính */
+    /* Để các thẻ div có thể xếp cạnh nhau (thay vì xếp dọc), chúng ta dùng inline-block */
+    .box, main > div { 
+        display: inline-block;
+        width: 45vw; /* Hoặc 45% tùy thuộc vào class của starter code (45% of viewport width) */
+        vertical-align: top; /* Giúp các div thẳng hàng ở phía trên */
+        margin: 10px; /* Thêm chút khoảng cách giữa các div */
+    }
 
+    /* 1.a: Giới hạn chiều cao của hình ảnh không quá 30% chiều cao màn hình */
+    img {
+        max-height: 30vh; /* 30% of viewport height */
+        width: auto;      /* Giữ nguyên tỉ lệ ảnh không bị bóp méo */
+    }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* ==========================================================================
+   Query #2: Large Screen View (Kích hoạt ở độ rộng màn hình từ 998px trở lên)
+   ========================================================================== */
+@media screen and (min-width: 998px) {
+    /* 2.a: Thay đổi chiều rộng của các thẻ div thành 30% chiều rộng màn hình */
+    /* Khi chiều rộng giảm xuống 30%, 3 thẻ div sẽ tự động xếp vừa trên một hàng ngang */
+    .box, main > div {
+        width: 30vw; /* Hoặc 30% (30% of viewport width) */
+    }
+}
 
 
 

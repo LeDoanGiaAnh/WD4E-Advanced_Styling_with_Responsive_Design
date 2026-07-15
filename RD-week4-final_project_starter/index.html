@@ -5,61 +5,77 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Final Project</title>
+  <title>Final Project - Nature Portfolio</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+  <!-- Thêm liên kết bỏ qua nội dung để tối ưu hóa khả năng tiếp cận (Accessibility) -->
+  <a href="#main" class="skip-link">Skip to Main Content</a>
+
   <header>
-    <h1 id="top">Final Project</h1>
+    <h1 id="top">The Colors of Nature</h1>
   </header>
 
-  <main>
-    <p>Replace all of the images with images of your choice and appropriate captions. Include two paragraphs about the contents of your site.  Do not remove the skip to top link.</p>
-
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque blanditiis facilis excepturi exercitationem modi! Ea cum dicta tenetur eos ut dolores debitis ipsam incidunt. Quam debitis culpa vitae harum temporibus?</p>
+  <!-- Thêm id="main" cho thẻ main để liên kết skip-link nhảy tới đúng vị trí -->
+  <main id="main">
     
-    <div class = "grid">
+    <!-- Yêu cầu 2: Thay đổi 2 đoạn văn gốc thành nội dung thực tế về chủ đề của trang web -->
+    <p>Welcome to our online gallery celebrating the stunning color palettes found in the natural world. From the deep red hues of Autumn leaves to the bright, energetic yellow of summer flowers, nature provides us with an endless source of artistic inspiration.</p>
+
+    <p>Each image below captures a unique specimen representing a specific color of the spectrum. As you explore the collection, notice how light, environment, and organic textures interact to create these vivid visual displays.</p>
+    
+    <!-- Yêu cầu 1: Giữ nguyên class="grid", thay thế 9 ảnh mẫu bằng ảnh thật chất lượng cao kèm thuộc tính alt chi tiết -->
+    <div class="grid">
         <figure>
-        <img src="images/Red.jpeg" alt="Red" width="200">
-        <figcaption>Red</figcaption>
+          <img src="https://images.unsplash.com/photo-1522441815192-d9f04eb0615c?q=80&w=500" alt="Vibrant red autumn maple leaves on a tree branch">
+          <figcaption>Autumn Crimson</figcaption>
         </figure>
+        
         <figure>
-        <img src="images/Orange.png" alt="Orange" width="200">
-        <figcaption>Orange</figcaption>
+          <img src="https://images.unsplash.com/photo-1611080626919-7cf5a9dbab5b?q=80&w=500" alt="Fresh orange slices lying flat on a bright orange surface">
+          <figcaption>Zesty Citrus</figcaption>
         </figure>
+        
         <figure>
-        <img src="images/Yellow.png" alt="Yellow" width="200">
-        <figcaption>Yellow</figcaption>
+          <img src="https://images.unsplash.com/photo-1596436889106-be35e843f974?q=80&w=500" alt="A blooming bright yellow sunflower reaching towards the sun">
+          <figcaption>Sunny Sunflower</figcaption>
         </figure>
+        
         <figure>
-        <img src="images/Green.png" alt="Green" width="200">
-        <figcaption>Green</figcaption>
+          <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=500" alt="Lush green trees in a dense sunlit forest canopy">
+          <figcaption>Forest Canopy</figcaption>
         </figure>
+        
         <figure>
-        <img src="images/Blue.png" alt="Blue" width="200">
-        <figcaption>Blue</figcaption>
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=500" alt="Deep blue tropical ocean waves rolling onto a sandy shore">
+          <figcaption>Ocean Deep</figcaption>
         </figure>
+        
         <figure>
-        <img src="images/Indigo.jpeg" alt="Indigo" width="200">
-        <figcaption>Indigo</figcaption>
+          <img src="https://images.unsplash.com/photo-1579546929518-9e396f3cc809?q=80&w=500" alt="A dark purple and blue abstract night sky gradient with soft stars">
+          <figcaption>Twilight Sky</figcaption>
         </figure>
+        
         <figure>
-        <img src="images/Purple.png" alt="Purple" width="200">
-        <figcaption>Purple</figcaption>
+          <img src="https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=500" alt="Fields of purple lavender blooming under a soft pink sunset">
+          <figcaption>Lavender Fields</figcaption>
         </figure>
+        
         <figure>
-        <img src="images/Pink.jpeg" alt="Pink" width="200">
-        <figcaption>Pink</figcaption>
+          <img src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?q=80&w=500" alt="Delicate pink cherry blossom petals blooming in the spring breeze">
+          <figcaption>Cherry Blossom</figcaption>
         </figure>
+        
         <figure>
-        <img src="images/White.png" alt="White" width="200">
-        <figcaption>White</figcaption>
+          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=500" alt="Majestic snow-capped mountain peaks reflecting in a calm white glacial lake">
+          <figcaption>Glacial White</figcaption>
         </figure>
     </div>
   </main>
 
   <footer>
+    <!-- Không xóa đường dẫn quay lại đầu trang theo yêu cầu -->
     <a href="#top">Jump to the Top</a>
   </footer>
 </body>
